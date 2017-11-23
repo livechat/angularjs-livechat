@@ -1,23 +1,21 @@
 {
   "name": "angularjs-livechat",
-  "version": "0.0.3",
-  "description": "AngularJS component to integrate LiveChat with your single-page app",
+  "version": "0.0.4",
+  "description":
+    "AngularJS component to integrate LiveChat with your single-page app",
   "main": "lib/angularjs-livechat.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy": "mkdir -p lib && cp angularjs-livechat.js lib/",
-    "uglify": "uglifyjs angularjs-livechat.js -m -o lib/angularjs-livechat.min.js",
+    "uglify":
+      "uglifyjs angularjs-livechat.js -m -o lib/angularjs-livechat.min.js",
     "prepublish": "npm run copy && npm run uglify"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/livechat/angularjs-livechat.git"
   },
-  "keywords": [
-    "angular",
-    "angularjs",
-    "livechat"
-  ],
+  "keywords": ["angular", "angularjs", "livechat"],
   "author": "wkwiatek <wojtek.kwiatek@gmail.com>",
   "license": "MIT",
   "bugs": {

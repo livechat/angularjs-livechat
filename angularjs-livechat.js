@@ -17,7 +17,8 @@
   angular.module('ngLiveChat', []).directive('livechat', function() {
     return {
       scope: {
-        license: '@'
+        license: '@',
+        group: '@'
       },
       bindToController: true,
       controllerAs: 'vm',
@@ -26,6 +27,10 @@
         function($window) {
           $window.__lc = __lc || {};
           $window.__lc.license = this.license;
+
+          if (this.group) {
+            $window.__lc.group = this.group;
+          }
 
           (function() {
             var lc = $window.document.createElement('script');

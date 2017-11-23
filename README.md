@@ -1,7 +1,9 @@
 # angularjs-livechat
+
 AngularJS component to integrate LiveChat with your single-page app
 
 ## Install
+
 ```
 npm install --save angularjs-livechat
 ```
@@ -9,14 +11,19 @@ npm install --save angularjs-livechat
 ## Usage
 
 Add to app dependencies:
+
 ```js
 angular.module('app', ['ngLiveChat']);
 ```
 
 Use directive:
+
 ```html
-<livechat license="007"></livechat>
+<livechat license="9280315"></livechat>
 ```
+
+As optional parameter, you can define group where chat starts for e.g. group="1"
+.
 
 ## Demo
 
