@@ -32,7 +32,7 @@
 
           (function() {
             var lc = $window.document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-            lc.src = ('https:' == $window.document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            lc.src = '//cdn.livechatinc.com/tracking.js';
             var s = $window.document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
           })();
 
